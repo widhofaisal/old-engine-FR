@@ -1,0 +1,19 @@
+2023-06-08 19:51:24,767 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-08 19:51:24,772 - root - INFO - [*] init_db(): Done
+2023-06-08 19:51:24,830 - root - INFO - [*] init_embeddings(): Done in 0.057804107666015625 seconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

@@ -1,0 +1,1044 @@
+2023-06-09 14:06:08,877 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-09 14:06:08,881 - root - INFO - [*] init_db(): Done
+2023-06-09 14:06:09,220 - root - INFO - [*] init_embeddings(): Done in 0.3384366035461426 seconds
+2023-06-09 14:39:34,885 - root - INFO - IdentifyFace is called.
+2023-06-09 14:39:34,888 - grpc._server - ERROR - Exception calling application: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 427, in identification_m
+    embeddings = emb_dict.get(tenant).get('all')
+AttributeError: 'NoneType' object has no attribute 'get'
+2023-06-09 14:40:20,326 - root - INFO - IdentifyFace is called.
+2023-06-09 14:40:20,326 - grpc._server - ERROR - Exception calling application: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 427, in identification_m
+    embeddings = emb_dict.get(tenant).get('all')
+AttributeError: 'NoneType' object has no attribute 'get'
+2023-06-09 14:41:29,121 - root - INFO - Addtenant is called.
+2023-06-09 14:41:29,127 - root - INFO - Create tenant time: 6 milliseconds
+2023-06-09 14:41:40,905 - root - INFO - IdentifyFace is called.
+2023-06-09 14:41:40,997 - root - INFO - MTCNN face detection time: 91.66608599999999
+2023-06-09 14:41:41,305 - root - INFO - Identification time server: 400 milliseconds
+2023-06-09 14:41:41,361 - root - INFO - CreateFeature is called.
+2023-06-09 14:41:41,440 - root - INFO - MTCNN face detection time: 78.933272
+2023-06-09 14:41:41,757 - root - INFO - Create Feature time: 396 milliseconds
+2023-06-09 14:42:00,205 - root - INFO - IdentifyFace is called.
+2023-06-09 14:42:00,287 - root - INFO - MTCNN face detection time: 80.81253500000001
+2023-06-09 14:42:00,557 - root - INFO - Identification time server: 352 milliseconds
+2023-06-09 14:49:31,575 - root - INFO - IdentifyFace is called.
+2023-06-09 14:49:31,575 - grpc._server - ERROR - Exception calling application: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 427, in identification_m
+    embeddings = emb_dict.get(tenant).get('all')
+AttributeError: 'NoneType' object has no attribute 'get'
+2023-06-09 14:50:20,870 - root - INFO - IdentifyFace is called.
+2023-06-09 14:50:20,870 - grpc._server - ERROR - Exception calling application: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 427, in identification_m
+    embeddings = emb_dict.get(tenant).get('all')
+AttributeError: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-09 15:02:45,821 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-09 15:02:45,825 - root - INFO - [*] init_db(): Done
+2023-06-09 15:02:46,855 - root - INFO - [*] init_embeddings(): Done in 1.0292127132415771 seconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-09 15:09:58,990 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-09 15:09:58,995 - root - INFO - [*] init_db(): Done
+2023-06-09 15:10:00,008 - root - INFO - [*] init_embeddings(): Done in 1.0126490592956543 seconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-09 17:56:39,736 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-09 17:56:39,741 - root - INFO - [*] init_db(): Done
+2023-06-09 17:56:40,777 - root - INFO - [*] init_embeddings(): Done in 1.0352699756622314 seconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-10 05:21:39,244 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-10 05:21:39,350 - root - INFO - [*] init_db(): Done
+2023-06-10 05:21:41,149 - root - INFO - [*] init_embeddings(): Done in 1.7992711067199707 seconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 28, in <module>
+    from PIL import Image
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/PIL/Image.py", line 94, in <module>
+    from . import _imaging as core
+KeyboardInterrupt
+2023-06-10 05:34:34,188 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-10 05:34:34,246 - root - INFO - [*] init_db(): Done
+2023-06-10 05:34:35,724 - root - INFO - [*] init_embeddings(): Done in 1.4777443408966064 seconds
+2023-06-10 05:38:46,372 - root - INFO - IdentifyFace is called.
+2023-06-10 05:38:46,553 - root - INFO - MTCNN face detection time: 156.53341700000001
+2023-06-10 05:38:47,205 - root - INFO - Identification time server: 810 milliseconds
+2023-06-10 05:38:55,994 - root - INFO - IdentifyFace is called.
+2023-06-10 05:38:56,049 - root - INFO - MTCNN face detection time: 54.768355
+2023-06-10 05:38:56,352 - root - INFO - Identification time server: 357 milliseconds
+2023-06-10 05:39:00,024 - root - INFO - IdentifyFace is called.
+2023-06-10 05:39:00,079 - root - INFO - MTCNN face detection time: 54.625209
+2023-06-10 05:39:00,395 - root - INFO - Identification time server: 371 milliseconds
+2023-06-10 05:39:03,481 - root - INFO - IdentifyFace is called.
+2023-06-10 05:39:03,536 - root - INFO - MTCNN face detection time: 54.31644
+2023-06-10 05:39:03,813 - root - INFO - Identification time server: 332 milliseconds
+2023-06-10 05:41:55,641 - root - INFO - DeleteTenant is called.
+2023-06-10 05:41:55,641 - root - INFO - Delete tenant time: 0 milliseconds
+2023-06-10 05:42:05,700 - root - INFO - Addtenant is called.
+2023-06-10 05:42:05,704 - root - INFO - Create tenant time: 5 milliseconds
+2023-06-10 05:42:16,981 - root - INFO - IdentifyFace is called.
+2023-06-10 05:42:17,052 - root - INFO - MTCNN face detection time: 69.736229
+2023-06-10 05:42:17,443 - root - INFO - Identification time server: 461 milliseconds
+2023-06-10 05:42:20,334 - root - INFO - IdentifyFace is called.
+2023-06-10 05:42:20,419 - root - INFO - MTCNN face detection time: 84.454742
+2023-06-10 05:42:20,840 - root - INFO - Identification time server: 505 milliseconds
+2023-06-10 05:42:36,977 - root - INFO - Addtenant is called.
+2023-06-10 05:42:36,983 - root - INFO - Create tenant time: 5 milliseconds
+2023-06-10 05:42:54,595 - root - INFO - IdentifyFace is called.
+2023-06-10 05:42:54,677 - root - INFO - MTCNN face detection time: 81.317981
+2023-06-10 05:42:55,064 - root - INFO - Identification time server: 468 milliseconds
+2023-06-10 05:42:55,389 - root - INFO - CreateFeature is called.
+2023-06-10 05:42:55,490 - root - INFO - MTCNN face detection time: 100.217994
+2023-06-10 05:42:55,832 - root - INFO - Create Feature time: 443 milliseconds
+2023-06-10 05:43:09,390 - root - INFO - IdentifyFace is called.
+2023-06-10 05:43:09,447 - root - INFO - MTCNN face detection time: 56.627947999999996
+2023-06-10 05:43:09,838 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:43:18,991 - root - INFO - IdentifyFace is called.
+2023-06-10 05:43:19,050 - root - INFO - MTCNN face detection time: 58.12767
+2023-06-10 05:43:19,435 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:43:21,110 - root - INFO - IdentifyFace is called.
+2023-06-10 05:43:21,166 - root - INFO - MTCNN face detection time: 55.751554
+2023-06-10 05:43:21,465 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:43:23,045 - root - INFO - IdentifyFace is called.
+2023-06-10 05:43:23,109 - root - INFO - MTCNN face detection time: 63.707429999999995
+2023-06-10 05:43:23,546 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:43:27,971 - root - INFO - IdentifyFace is called.
+2023-06-10 05:43:28,036 - root - INFO - MTCNN face detection time: 64.721479
+2023-06-10 05:43:28,352 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:43:29,764 - root - INFO - IdentifyFace is called.
+2023-06-10 05:43:29,838 - root - INFO - MTCNN face detection time: 73.515371
+2023-06-10 05:43:30,110 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:43:31,371 - root - INFO - IdentifyFace is called.
+2023-06-10 05:43:31,437 - root - INFO - MTCNN face detection time: 65.491112
+2023-06-10 05:43:31,849 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:43:33,293 - root - INFO - IdentifyFace is called.
+2023-06-10 05:43:33,369 - root - INFO - MTCNN face detection time: 75.80978900000001
+2023-06-10 05:43:33,727 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:46:17,089 - root - INFO - IdentifyFace is called.
+2023-06-10 05:46:17,155 - root - INFO - MTCNN face detection time: 65.87572999999999
+2023-06-10 05:46:17,521 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:46:19,868 - root - INFO - IdentifyFace is called.
+2023-06-10 05:46:19,936 - root - INFO - MTCNN face detection time: 67.997931
+2023-06-10 05:46:20,352 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:46:21,719 - root - INFO - IdentifyFace is called.
+2023-06-10 05:46:21,786 - root - INFO - MTCNN face detection time: 67.06772699999999
+2023-06-10 05:46:22,194 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:46:23,525 - root - INFO - IdentifyFace is called.
+2023-06-10 05:46:23,581 - root - INFO - MTCNN face detection time: 55.664456
+2023-06-10 05:46:23,905 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:46:25,637 - root - INFO - IdentifyFace is called.
+2023-06-10 05:46:25,702 - root - INFO - MTCNN face detection time: 64.554982
+2023-06-10 05:46:26,115 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:46:27,482 - root - INFO - IdentifyFace is called.
+2023-06-10 05:46:27,551 - root - INFO - MTCNN face detection time: 68.970026
+2023-06-10 05:46:27,894 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+2023-06-10 05:46:29,223 - root - INFO - IdentifyFace is called.
+2023-06-10 05:46:29,286 - root - INFO - MTCNN face detection time: 62.626794
+2023-06-10 05:46:29,588 - grpc._server - ERROR - Exception calling application: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 475, in identification_m
+    'nip': result_nik['nip'],
+KeyError: 'nip'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-10 05:50:40,399 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-10 05:50:40,494 - root - INFO - [*] init_db(): Done
+2023-06-10 05:50:42,602 - root - INFO - [*] init_embeddings(): Done in 2.106796979904175 seconds
+2023-06-10 05:51:04,261 - root - INFO - IdentifyFace is called.
+2023-06-10 05:51:04,346 - root - INFO - MTCNN face detection time: 83.13408799999999
+2023-06-10 05:51:04,720 - root - INFO - Identification time server: 458 milliseconds
+2023-06-10 05:51:10,100 - root - INFO - IdentifyFace is called.
+2023-06-10 05:51:10,171 - root - INFO - MTCNN face detection time: 71.220017
+2023-06-10 05:51:10,545 - root - INFO - Identification time server: 444 milliseconds
+2023-06-10 05:51:13,056 - root - INFO - IdentifyFace is called.
+2023-06-10 05:51:13,116 - root - INFO - MTCNN face detection time: 59.333984
+2023-06-10 05:51:13,488 - root - INFO - Identification time server: 431 milliseconds
+2023-06-10 05:51:14,759 - root - INFO - IdentifyFace is called.
+2023-06-10 05:51:14,826 - root - INFO - MTCNN face detection time: 66.322598
+2023-06-10 05:51:15,132 - root - INFO - Identification time server: 372 milliseconds
+2023-06-10 05:56:10,360 - root - INFO - IdentifyFace is called.
+2023-06-10 05:56:10,424 - root - INFO - MTCNN face detection time: 63.637955
+2023-06-10 05:56:10,744 - root - INFO - Identification time server: 384 milliseconds
+2023-06-10 05:56:12,395 - root - INFO - IdentifyFace is called.
+2023-06-10 05:56:12,451 - root - INFO - MTCNN face detection time: 55.454059
+2023-06-10 05:56:12,759 - root - INFO - Identification time server: 364 milliseconds
+2023-06-10 05:56:14,094 - root - INFO - IdentifyFace is called.
+2023-06-10 05:56:14,147 - root - INFO - MTCNN face detection time: 52.183848999999995
+2023-06-10 05:56:14,427 - root - INFO - Identification time server: 332 milliseconds
+2023-06-10 05:56:15,698 - root - INFO - IdentifyFace is called.
+2023-06-10 05:56:15,753 - root - INFO - MTCNN face detection time: 54.411572
+2023-06-10 05:56:16,061 - root - INFO - Identification time server: 363 milliseconds
+2023-06-10 05:56:17,552 - root - INFO - IdentifyFace is called.
+2023-06-10 05:56:17,608 - root - INFO - MTCNN face detection time: 55.839355
+2023-06-10 05:56:17,907 - root - INFO - Identification time server: 355 milliseconds
+2023-06-10 05:56:19,034 - root - INFO - IdentifyFace is called.
+2023-06-10 05:56:19,087 - root - INFO - MTCNN face detection time: 52.969663
+2023-06-10 05:56:19,349 - root - INFO - Identification time server: 314 milliseconds
+2023-06-10 05:56:20,621 - root - INFO - IdentifyFace is called.
+2023-06-10 05:56:20,675 - root - INFO - MTCNN face detection time: 53.258129000000004
+2023-06-10 05:56:20,988 - root - INFO - Identification time server: 366 milliseconds
+2023-06-10 05:56:22,182 - root - INFO - IdentifyFace is called.
+2023-06-10 05:56:22,238 - root - INFO - MTCNN face detection time: 55.698501
+2023-06-10 05:56:22,525 - root - INFO - Identification time server: 343 milliseconds
+2023-06-10 05:56:23,716 - root - INFO - IdentifyFace is called.
+2023-06-10 05:56:23,771 - root - INFO - MTCNN face detection time: 53.956088
+2023-06-10 05:56:24,036 - root - INFO - Identification time server: 319 milliseconds
+2023-06-10 05:56:46,522 - root - INFO - IdentifyFace is called.
+2023-06-10 05:56:46,575 - root - INFO - MTCNN face detection time: 52.970946
+2023-06-10 05:56:46,841 - root - INFO - Identification time server: 319 milliseconds
+2023-06-10 05:56:48,797 - root - INFO - IdentifyFace is called.
+2023-06-10 05:56:48,855 - root - INFO - MTCNN face detection time: 57.509517
+2023-06-10 05:56:49,157 - root - INFO - Identification time server: 360 milliseconds
+2023-06-10 05:56:50,337 - root - INFO - IdentifyFace is called.
+2023-06-10 05:56:50,395 - root - INFO - MTCNN face detection time: 58.16259599999999
+2023-06-10 05:56:50,699 - root - INFO - Identification time server: 362 milliseconds
+2023-06-10 06:07:57,716 - root - INFO - IdentifyFace is called.
+2023-06-10 06:07:57,771 - root - INFO - MTCNN face detection time: 54.523157000000005
+2023-06-10 06:07:58,051 - root - INFO - Identification time server: 335 milliseconds
+2023-06-10 06:08:15,396 - root - INFO - IdentifyFace is called.
+2023-06-10 06:08:15,449 - root - INFO - MTCNN face detection time: 52.740694999999995
+2023-06-10 06:08:15,722 - root - INFO - Identification time server: 325 milliseconds
+2023-06-10 06:08:22,363 - root - INFO - IdentifyFace is called.
+2023-06-10 06:08:22,415 - root - INFO - MTCNN face detection time: 51.893732
+2023-06-10 06:08:22,674 - root - INFO - Identification time server: 311 milliseconds
+2023-06-10 06:08:24,978 - root - INFO - IdentifyFace is called.
+2023-06-10 06:08:25,036 - root - INFO - MTCNN face detection time: 57.642633
+2023-06-10 06:08:25,334 - root - INFO - Identification time server: 356 milliseconds
+2023-06-10 06:08:26,724 - root - INFO - IdentifyFace is called.
+2023-06-10 06:08:26,781 - root - INFO - MTCNN face detection time: 56.883528000000005
+2023-06-10 06:08:27,089 - root - INFO - Identification time server: 365 milliseconds
+2023-06-10 06:08:43,157 - root - INFO - IdentifyFace is called.
+2023-06-10 06:08:43,221 - root - INFO - MTCNN face detection time: 63.27518
+2023-06-10 06:08:43,487 - root - INFO - Identification time server: 329 milliseconds
+2023-06-10 06:08:45,153 - root - INFO - IdentifyFace is called.
+2023-06-10 06:08:45,218 - root - INFO - MTCNN face detection time: 64.424274
+2023-06-10 06:08:45,522 - root - INFO - Identification time server: 369 milliseconds
+2023-06-10 06:08:47,027 - root - INFO - IdentifyFace is called.
+2023-06-10 06:08:47,083 - root - INFO - MTCNN face detection time: 55.415381
+2023-06-10 06:08:47,392 - root - INFO - Identification time server: 364 milliseconds
+2023-06-10 06:10:52,696 - root - INFO - IdentifyFace is called.
+2023-06-10 06:10:52,752 - root - INFO - MTCNN face detection time: 56.188164
+2023-06-10 06:10:53,070 - root - INFO - Identification time server: 374 milliseconds
+2023-06-10 06:10:54,476 - root - INFO - IdentifyFace is called.
+2023-06-10 06:10:54,531 - root - INFO - MTCNN face detection time: 54.674565
+2023-06-10 06:10:54,841 - root - INFO - Identification time server: 364 milliseconds
+2023-06-10 06:10:56,192 - root - INFO - IdentifyFace is called.
+2023-06-10 06:10:56,259 - root - INFO - MTCNN face detection time: 66.705359
+2023-06-10 06:10:56,565 - root - INFO - Identification time server: 373 milliseconds
+2023-06-10 06:10:57,790 - root - INFO - IdentifyFace is called.
+2023-06-10 06:10:57,843 - root - INFO - MTCNN face detection time: 52.022267
+2023-06-10 06:10:58,142 - root - INFO - Identification time server: 351 milliseconds
+2023-06-10 06:10:59,466 - root - INFO - IdentifyFace is called.
+2023-06-10 06:10:59,521 - root - INFO - MTCNN face detection time: 55.120873
+2023-06-10 06:10:59,837 - root - INFO - Identification time server: 370 milliseconds
+2023-06-10 06:11:01,541 - root - INFO - IdentifyFace is called.
+2023-06-10 06:11:01,594 - root - INFO - MTCNN face detection time: 52.924144999999996
+2023-06-10 06:11:01,893 - root - INFO - Identification time server: 352 milliseconds
+2023-06-10 06:18:32,116 - root - INFO - IdentifyFace is called.
+2023-06-10 06:18:32,172 - root - INFO - MTCNN face detection time: 55.144411999999996
+2023-06-10 06:18:32,493 - root - INFO - Identification time server: 376 milliseconds
+2023-06-10 06:18:35,136 - root - INFO - IdentifyFace is called.
+2023-06-10 06:18:35,190 - root - INFO - MTCNN face detection time: 53.726554
+2023-06-10 06:18:35,490 - root - INFO - Identification time server: 354 milliseconds
+2023-06-10 06:18:37,439 - root - INFO - IdentifyFace is called.
+2023-06-10 06:18:37,492 - root - INFO - MTCNN face detection time: 52.410111
+2023-06-10 06:18:37,800 - root - INFO - Identification time server: 361 milliseconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-10 06:55:59,390 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-10 06:55:59,840 - root - INFO - [*] init_db(): Done
+2023-06-10 06:56:02,586 - root - INFO - [*] init_embeddings(): Done in 2.7461514472961426 seconds
+2023-06-10 06:56:20,202 - root - INFO - IdentifyFace is called.
+2023-06-10 06:56:20,274 - root - INFO - MTCNN face detection time: 70.76036500000001
+2023-06-10 06:56:20,544 - root - INFO - Identification time server: 342 milliseconds
+2023-06-10 06:56:32,081 - root - INFO - IdentifyFace is called.
+2023-06-10 06:56:32,137 - root - INFO - MTCNN face detection time: 55.928652
+2023-06-10 06:56:32,446 - root - INFO - Identification time server: 364 milliseconds
+2023-06-10 06:56:41,741 - root - INFO - Addtenant is called.
+2023-06-10 06:56:41,745 - root - INFO - Create tenant time: 3 milliseconds
+2023-06-10 06:56:50,065 - root - INFO - IdentifyFace is called.
+2023-06-10 06:56:50,132 - root - INFO - MTCNN face detection time: 66.7339
+2023-06-10 06:56:50,405 - root - INFO - Identification time server: 340 milliseconds
+2023-06-10 06:56:50,583 - root - INFO - CreateFeature is called.
+2023-06-10 06:56:50,648 - root - INFO - MTCNN face detection time: 64.60346
+2023-06-10 06:56:50,944 - root - INFO - Create Feature time: 360 milliseconds
+2023-06-10 06:57:02,133 - root - INFO - IdentifyFace is called.
+2023-06-10 06:57:02,187 - root - INFO - MTCNN face detection time: 53.881848000000005
+2023-06-10 06:57:02,456 - root - INFO - Identification time server: 323 milliseconds
+2023-06-10 06:57:06,129 - root - INFO - [*] init_embeddings(): Done in 3.6733741760253906 seconds
+2023-06-10 06:57:11,244 - root - INFO - IdentifyFace is called.
+2023-06-10 06:57:11,244 - grpc._server - ERROR - Exception calling application: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 432, in identification_m
+    embeddings = emb_dict.get(tenant).get('all')
+AttributeError: 'NoneType' object has no attribute 'get'
+2023-06-10 06:57:18,599 - root - INFO - IdentifyFace is called.
+2023-06-10 06:57:18,599 - grpc._server - ERROR - Exception calling application: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 432, in identification_m
+    embeddings = emb_dict.get(tenant).get('all')
+AttributeError: 'NoneType' object has no attribute 'get'
+2023-06-10 06:57:21,395 - root - INFO - IdentifyFace is called.
+2023-06-10 06:57:21,396 - grpc._server - ERROR - Exception calling application: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 432, in identification_m
+    embeddings = emb_dict.get(tenant).get('all')
+AttributeError: 'NoneType' object has no attribute 'get'
+2023-06-10 06:57:23,101 - root - INFO - IdentifyFace is called.
+2023-06-10 06:57:23,101 - grpc._server - ERROR - Exception calling application: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 432, in identification_m
+    embeddings = emb_dict.get(tenant).get('all')
+AttributeError: 'NoneType' object has no attribute 'get'
+2023-06-10 06:57:24,576 - root - INFO - IdentifyFace is called.
+2023-06-10 06:57:24,576 - grpc._server - ERROR - Exception calling application: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 432, in identification_m
+    embeddings = emb_dict.get(tenant).get('all')
+AttributeError: 'NoneType' object has no attribute 'get'
+2023-06-10 06:57:25,801 - root - INFO - IdentifyFace is called.
+2023-06-10 06:57:25,801 - grpc._server - ERROR - Exception calling application: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 432, in identification_m
+    embeddings = emb_dict.get(tenant).get('all')
+AttributeError: 'NoneType' object has no attribute 'get'
+2023-06-10 06:57:27,032 - root - INFO - IdentifyFace is called.
+2023-06-10 06:57:27,032 - grpc._server - ERROR - Exception calling application: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 175, in IdentifyFace
+    result_name, message, err_code = identification_m(image, request.tenant, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 432, in identification_m
+    embeddings = emb_dict.get(tenant).get('all')
+AttributeError: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-10 07:26:50,168 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-10 07:26:50,288 - root - INFO - [*] init_db(): Done
+2023-06-10 07:26:54,569 - root - INFO - [*] init_embeddings(): Done in 4.28137993812561 seconds
+2023-06-12 16:41:14,926 - root - INFO - Addtenant is called.
+2023-06-12 16:41:14,932 - root - INFO - Create tenant time: 6 milliseconds
+2023-06-12 16:42:46,541 - root - INFO - Addtenant is called.
+2023-06-12 16:42:46,546 - root - INFO - Create tenant time: 6 milliseconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-12 20:16:46,575 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-12 20:16:46,734 - root - INFO - [*] init_db(): Done
+2023-06-12 20:16:48,624 - root - INFO - [*] init_embeddings(): Done in 1.88944411277771 seconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-13 05:31:27,554 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-13 05:31:27,640 - root - INFO - [*] init_db(): Done
+2023-06-13 05:31:28,800 - root - INFO - [*] init_embeddings(): Done in 1.1607000827789307 seconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-13 05:53:48,291 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-13 05:53:48,337 - root - INFO - [*] init_db(): Done
+2023-06-13 05:53:49,655 - root - INFO - [*] init_embeddings(): Done in 1.3185060024261475 seconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-13 06:01:15,080 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-13 06:01:15,165 - root - INFO - [*] init_db(): Done
+2023-06-13 06:01:16,356 - root - INFO - [*] init_embeddings(): Done in 1.191173791885376 seconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-13 06:15:47,824 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-13 06:15:47,923 - root - INFO - [*] init_db(): Done
+2023-06-13 06:15:49,439 - root - INFO - [*] init_embeddings(): Done in 1.5163071155548096 seconds
+2023-06-13 06:15:51,684 - root - INFO - IdentifyFace is called.
+2023-06-13 06:15:51,685 - root - INFO - Get all Embeddings from testing12 Error
+2023-06-13 06:15:51,687 - root - INFO - Identification time server: 1 milliseconds
+2023-06-13 06:16:01,588 - root - INFO - IdentifyFace is called.
+2023-06-13 06:16:01,588 - root - INFO - Get all Embeddings from testing12 Error
+2023-06-13 06:16:01,588 - root - INFO - Identification time server: 0 milliseconds
+2023-06-13 06:16:08,714 - root - INFO - IdentifyFace is called.
+2023-06-13 06:16:08,714 - root - INFO - Get all Embeddings from testing12 Error
+2023-06-13 06:16:08,715 - root - INFO - Identification time server: 0 milliseconds
+2023-06-13 06:21:33,399 - root - INFO - IdentifyFace is called.
+2023-06-13 06:21:33,400 - root - INFO - Get all Embeddings from testing12 Error
+2023-06-13 06:21:33,400 - root - INFO - Identification time server: 0 milliseconds
+2023-06-13 06:21:36,102 - root - INFO - IdentifyFace is called.
+2023-06-13 06:21:36,102 - root - INFO - Get all Embeddings from testing12 Error
+2023-06-13 06:21:36,102 - root - INFO - Identification time server: 0 milliseconds
+2023-06-13 06:21:38,932 - root - INFO - IdentifyFace is called.
+2023-06-13 06:21:38,933 - root - INFO - Get all Embeddings from testing12 Error
+2023-06-13 06:21:38,933 - root - INFO - Identification time server: 0 milliseconds
+2023-06-13 06:21:40,689 - root - INFO - IdentifyFace is called.
+2023-06-13 06:21:40,689 - root - INFO - Get all Embeddings from testing12 Error
+2023-06-13 06:21:40,689 - root - INFO - Identification time server: 0 milliseconds
+2023-06-13 06:21:57,994 - root - INFO - IdentifyFace is called.
+2023-06-13 06:21:57,994 - root - INFO - Get all Embeddings from testing12 Error
+2023-06-13 06:21:57,994 - root - INFO - Identification time server: 0 milliseconds
+2023-06-13 06:26:51,217 - root - INFO - IdentifyFace is called.
+2023-06-13 06:26:51,218 - root - INFO - Get all Embeddings from testing12 Error
+2023-06-13 06:26:51,218 - root - INFO - Identification time server: 0 milliseconds
+2023-06-13 06:26:53,322 - root - INFO - IdentifyFace is called.
+2023-06-13 06:26:53,323 - root - INFO - Get all Embeddings from testing12 Error
+2023-06-13 06:26:53,323 - root - INFO - Identification time server: 0 milliseconds
+2023-06-13 06:26:55,320 - root - INFO - IdentifyFace is called.
+2023-06-13 06:26:55,320 - root - INFO - Get all Embeddings from testing12 Error
+2023-06-13 06:26:55,320 - root - INFO - Identification time server: 0 milliseconds
+2023-06-13 06:26:58,478 - root - INFO - IdentifyFace is called.
+2023-06-13 06:26:58,478 - root - INFO - Get all Embeddings from testing12 Error
+2023-06-13 06:26:58,478 - root - INFO - Identification time server: 0 milliseconds
+2023-06-13 06:29:24,552 - root - INFO - IdentifyFace is called.
+2023-06-13 06:29:24,552 - root - INFO - Get all Embeddings from testing12 Error
+2023-06-13 06:29:24,553 - root - INFO - Identification time server: 0 milliseconds
+2023-06-13 15:15:05,169 - root - INFO - IdentifyFace is called.
+2023-06-13 15:15:05,254 - root - INFO - MTCNN face detection time: 82.681577
+2023-06-13 15:15:05,533 - root - INFO - Identification time server: 364 milliseconds
+2023-06-13 15:18:12,778 - root - INFO - IdentifyFace is called.
+2023-06-13 15:18:12,840 - root - INFO - MTCNN face detection time: 61.45698
+2023-06-13 15:18:13,112 - root - INFO - Identification time server: 334 milliseconds
+2023-06-13 15:19:12,302 - root - INFO - IdentifyFace is called.
+2023-06-13 15:19:12,367 - root - INFO - MTCNN face detection time: 65.104682
+2023-06-13 15:19:12,640 - root - INFO - Identification time server: 338 milliseconds
+2023-06-13 15:19:33,666 - root - INFO - IdentifyFace is called.
+2023-06-13 15:19:33,729 - root - INFO - MTCNN face detection time: 62.543265
+2023-06-13 15:19:33,997 - root - INFO - Identification time server: 330 milliseconds
+2023-06-13 15:20:17,894 - root - INFO - DeleteFace is called.
+2023-06-13 15:20:17,898 - root - INFO - Delete face time: 4 milliseconds
+2023-06-13 15:20:27,629 - root - INFO - IdentifyFace is called.
+2023-06-13 15:20:27,691 - root - INFO - MTCNN face detection time: 62.022698
+2023-06-13 15:20:27,973 - root - INFO - Identification time server: 344 milliseconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-14 04:16:54,100 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-14 04:16:54,170 - root - INFO - [*] init_db(): Done
+2023-06-14 04:16:55,412 - root - INFO - [*] init_embeddings(): Done in 1.2419722080230713 seconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-14 04:46:50,783 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-14 04:46:50,837 - root - INFO - [*] init_db(): Done
+2023-06-14 04:46:52,009 - root - INFO - [*] init_embeddings(): Done in 1.1716418266296387 seconds
+2023-06-14 04:48:26,550 - root - INFO - IdentifyFace is called.
+2023-06-14 04:48:26,622 - root - INFO - MTCNN face detection time: 70.477159
+2023-06-14 04:48:26,892 - root - INFO - Identification time server: 342 milliseconds
+2023-06-14 04:48:40,666 - root - INFO - IdentifyFace is called.
+2023-06-14 04:48:40,724 - root - INFO - MTCNN face detection time: 57.653611
+2023-06-14 04:48:41,030 - root - INFO - Identification time server: 364 milliseconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 268, in <module>
+    server.add_insecure_port(f'[::]:{worker_port}')
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 256, in serve
+    duration = round(endt - startt)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-19 07:37:27,493 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-19 07:37:27,564 - root - INFO - [*] init_db(): Done
+2023-06-19 07:37:30,615 - root - INFO - [*] init_embeddings(): Done in 3.0509114265441895 seconds
+2023-06-19 07:42:23,554 - root - INFO - IdentifyFace is called.
+2023-06-19 07:42:23,627 - root - INFO - MTCNN face detection time: 71.92084799999999
+2023-06-19 07:42:23,957 - root - INFO - Identification time server: 403 milliseconds
+2023-06-19 07:43:20,990 - root - INFO - VerifyFace is called.
+2023-06-19 07:43:20,990 - root - INFO - Verification Image2 None
+2023-06-19 07:43:20,990 - root - INFO - Verification using NIK
+2023-06-19 07:43:20,990 - grpc._server - ERROR - Exception calling application: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 148, in VerifyFace
+    sim, result, message, err_code = verification_m_only(image, request.tenant, request.name, nik, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 520, in verification_m_only
+    embeddings = emb_dict.get(tenant).get(nik)
+AttributeError: 'NoneType' object has no attribute 'get'
+2023-06-19 07:45:25,507 - root - INFO - VerifyFace is called.
+2023-06-19 07:45:25,507 - root - INFO - Verification using Image
+2023-06-19 07:45:25,629 - root - INFO - MTCNN face detection time: 121.246369
+2023-06-19 07:45:25,756 - root - INFO - MTCNN face detection time: 124.532708
+2023-06-19 07:45:25,759 - root - INFO - Name: maulana
+0 False 015 1
+2023-06-19 07:45:26,328 - root - INFO - Verification time server: 820 milliseconds
+2023-06-19 07:46:22,419 - root - INFO - VerifyFace is called.
+2023-06-19 07:46:22,420 - root - INFO - Verification using Image
+2023-06-19 07:46:22,530 - root - INFO - MTCNN face detection time: 110.315755
+2023-06-19 07:46:22,661 - root - INFO - MTCNN face detection time: 123.040761
+2023-06-19 07:46:22,663 - root - INFO - Name: maulana
+0 False 015 1
+2023-06-19 07:46:23,230 - root - INFO - Verification time server: 810 milliseconds
+2023-06-19 07:47:02,686 - root - INFO - IdentifyFace is called.
+2023-06-19 07:47:02,740 - root - INFO - MTCNN face detection time: 53.541834
+2023-06-19 07:47:03,049 - root - INFO - Identification time server: 362 milliseconds
+2023-06-19 07:47:10,293 - root - INFO - IdentifyFace is called.
+2023-06-19 07:47:10,349 - root - INFO - MTCNN face detection time: 56.076983
+2023-06-19 07:47:10,666 - root - INFO - Identification time server: 373 milliseconds
+2023-06-19 07:47:23,164 - root - INFO - VerifyFace is called.
+2023-06-19 07:47:23,164 - root - INFO - Verification using Image
+2023-06-19 07:47:23,268 - root - INFO - MTCNN face detection time: 103.603217
+2023-06-19 07:47:23,370 - root - INFO - MTCNN face detection time: 99.98607399999999
+2023-06-19 07:47:23,374 - root - INFO - Name: maulana
+0 False 015 1
+2023-06-19 07:47:23,895 - root - INFO - Verification time server: 731 milliseconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 282, in <module>
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 270, in serve
+    
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-19 07:52:05,330 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-19 07:52:05,390 - root - INFO - [*] init_db(): Done
+2023-06-19 07:52:07,990 - root - INFO - [*] init_embeddings(): Done in 2.5996592044830322 seconds
+2023-06-19 07:52:12,583 - root - INFO - IdentifyFace is called.
+2023-06-19 07:52:12,657 - root - INFO - MTCNN face detection time: 72.106613
+2023-06-19 07:52:12,927 - root - INFO - Identification time server: 343 milliseconds
+2023-06-19 07:52:24,180 - root - INFO - VerifyFace is called.
+2023-06-19 07:52:24,181 - root - INFO - Verification using Image
+2023-06-19 07:52:24,292 - root - INFO - MTCNN face detection time: 111.555947
+2023-06-19 07:52:24,394 - root - INFO - MTCNN face detection time: 98.510905
+2023-06-19 07:52:24,396 - root - INFO - Name: maulana
+2023-06-19 07:52:24,909 - root - INFO - Similarity: shapes (1,512) and (1,512) not aligned: 512 (dim 1) != 1 (dim 0)
+0 False 015 1
+2023-06-19 07:52:24,909 - root - INFO - Verification time server: 728 milliseconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 281, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 269, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-19 07:58:23,858 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-19 07:58:23,921 - root - INFO - [*] init_db(): Done
+2023-06-19 07:58:26,751 - root - INFO - [*] init_embeddings(): Done in 2.8298275470733643 seconds
+2023-06-19 07:58:40,678 - root - INFO - IdentifyFace is called.
+2023-06-19 07:58:40,750 - root - INFO - MTCNN face detection time: 69.355111
+2023-06-19 07:58:41,023 - root - INFO - Identification time server: 343 milliseconds
+2023-06-19 07:58:43,732 - root - INFO - VerifyFace is called.
+2023-06-19 07:58:43,733 - root - INFO - Verification using Image
+2023-06-19 07:58:43,845 - root - INFO - MTCNN face detection time: 111.012341
+2023-06-19 07:58:43,947 - root - INFO - MTCNN face detection time: 99.260157
+2023-06-19 07:58:43,950 - root - INFO - Name: maulana
+2023-06-19 07:58:44,453 - root - INFO - Similarity: shapes (1,512) and (1,512) not aligned: 512 (dim 1) != 1 (dim 0)
+0 False 015 1
+2023-06-19 07:58:44,454 - root - INFO - Verification time server: 720 milliseconds
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 281, in <module>
+    serve()
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 269, in serve
+    server.wait_for_termination()
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 979, in wait_for_termination
+    timeout=timeout)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 141, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_common.py", line 106, in _wait_once
+    wait_fn(timeout=timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-06-19 08:00:04,512 - root - INFO - [*] init_model(): Using CPU Done
+2023-06-19 08:00:04,805 - root - INFO - [*] init_db(): Done
+2023-06-19 08:00:08,052 - root - INFO - [*] init_embeddings(): Done in 3.2473268508911133 seconds
+2023-06-19 08:00:18,179 - root - INFO - IdentifyFace is called.
+2023-06-19 08:00:18,252 - root - INFO - MTCNN face detection time: 71.991879
+2023-06-19 08:00:18,573 - root - INFO - Identification time server: 394 milliseconds
+2023-06-19 08:00:23,981 - root - INFO - VerifyFace is called.
+2023-06-19 08:00:23,981 - root - INFO - Verification using Image
+2023-06-19 08:00:24,092 - root - INFO - MTCNN face detection time: 111.043831
+2023-06-19 08:00:24,226 - root - INFO - MTCNN face detection time: 126.76431199999999
+2023-06-19 08:00:24,229 - root - INFO - Name: maulana
+2023-06-19 08:00:24,755 - root - INFO - Similarity: 1.0
+1.0 True 000 0
+2023-06-19 08:00:24,755 - root - INFO - Verification time server: 774 milliseconds
+2023-06-19 08:03:05,327 - root - INFO - IdentifyFace is called.
+2023-06-19 08:03:05,384 - root - INFO - MTCNN face detection time: 56.557112
+2023-06-19 08:03:05,683 - root - INFO - Identification time server: 356 milliseconds
+2023-06-19 08:03:20,602 - root - INFO - VerifyFace is called.
+2023-06-19 08:03:20,603 - root - INFO - Verification Image2 None
+2023-06-19 08:03:20,603 - root - INFO - Verification using NIK
+None
+2023-06-19 08:03:20,716 - root - INFO - MTCNN face detection time: 113.54189600000001
+2023-06-19 08:03:20,724 - root - INFO - Name: maulana
+0 False 015 1
+2023-06-19 08:03:21,035 - root - INFO - Verification time server: 432 milliseconds
+2023-06-19 08:05:45,014 - root - INFO - VerifyFace is called.
+2023-06-19 08:05:45,015 - root - INFO - Verification using Image
+2023-06-19 08:05:45,124 - root - INFO - MTCNN face detection time: 109.140947
+2023-06-19 08:05:45,231 - root - INFO - MTCNN face detection time: 98.95380700000001
+2023-06-19 08:05:45,234 - root - INFO - Name: maulana
+2023-06-19 08:05:45,738 - root - INFO - Similarity: 1.0
+1.0 True 000 0
+2023-06-19 08:05:45,739 - root - INFO - Verification time server: 724 milliseconds
+2023-06-19 08:06:03,879 - root - INFO - IdentifyFace is called.
+2023-06-19 08:06:03,935 - root - INFO - MTCNN face detection time: 55.376752
+2023-06-19 08:06:04,216 - root - INFO - Identification time server: 337 milliseconds
+2023-06-19 08:06:11,805 - root - INFO - VerifyFace is called.
+2023-06-19 08:06:11,805 - root - INFO - Verification using Image
+2023-06-19 08:06:11,909 - root - INFO - MTCNN face detection time: 103.449898
+2023-06-19 08:06:12,008 - root - INFO - MTCNN face detection time: 96.966594
+2023-06-19 08:06:12,011 - root - INFO - Name: maulana
+2023-06-19 08:06:12,500 - root - INFO - Similarity: 1.0
+1.0 True 000 0
+2023-06-19 08:06:12,501 - root - INFO - Verification time server: 695 milliseconds
+2023-06-19 08:07:54,756 - root - INFO - VerifyFace is called.
+2023-06-19 08:07:54,756 - root - INFO - Verification Image2 None
+2023-06-19 08:07:54,756 - root - INFO - Verification using NIK
+2023-06-19 08:07:54,756 - grpc._server - ERROR - Exception calling application: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/mnt/infran/docker/infran-svc/venv/lib/python3.7/site-packages/grpc/_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/mnt/infran/docker/infran-svc/worker/fr_infran_srv.py", line 147, in VerifyFace
+    sim, result, message, err_code = verification_m_only(image, request.tenant, request.name, nik, face_detector)
+  File "/mnt/infran/docker/infran-svc/worker/utils.py", line 520, in verification_m_only
+    embeddings = emb_dict.get(tenant).get(nik)
+AttributeError: 'NoneType' object has no attribute 'get'
+2023-06-19 08:09:32,406 - root - INFO - IdentifyFace is called.
+2023-06-19 08:09:32,467 - root - INFO - MTCNN face detection time: 61.50676
+2023-06-19 08:09:32,785 - root - INFO - Identification time server: 379 milliseconds
+2023-06-19 08:09:50,015 - root - INFO - VerifyFace is called.
+2023-06-19 08:09:50,016 - root - INFO - Verification Image2 None
+2023-06-19 08:09:50,016 - root - INFO - Verification using NIK
+None
+2023-06-19 08:09:50,126 - root - INFO - MTCNN face detection time: 110.292154
+2023-06-19 08:09:50,129 - root - INFO - Name: maulana
+0 False 015 1
+2023-06-19 08:09:50,394 - root - INFO - Verification time server: 378 milliseconds
+2023-06-19 08:09:55,053 - root - INFO - VerifyFace is called.
+2023-06-19 08:09:55,053 - root - INFO - Verification Image2 None
+2023-06-19 08:09:55,053 - root - INFO - Verification using NIK
+None
+2023-06-19 08:09:55,152 - root - INFO - MTCNN face detection time: 99.228541
+2023-06-19 08:09:55,155 - root - INFO - Name: maulana
+0 False 015 1
+2023-06-19 08:09:55,420 - root - INFO - Verification time server: 367 milliseconds
+2023-06-19 08:09:56,473 - root - INFO - VerifyFace is called.
+2023-06-19 08:09:56,473 - root - INFO - Verification Image2 None
+2023-06-19 08:09:56,473 - root - INFO - Verification using NIK
+None
+2023-06-19 08:09:56,577 - root - INFO - MTCNN face detection time: 103.736888
+2023-06-19 08:09:56,584 - root - INFO - Name: maulana
+0 False 015 1
+2023-06-19 08:09:56,851 - root - INFO - Verification time server: 378 milliseconds
+2023-06-19 17:42:32,921 - root - INFO - IdentifyFace is called.
+2023-06-19 17:42:32,980 - root - INFO - MTCNN face detection time: 58.847142
+2023-06-19 17:42:33,273 - root - INFO - Identification time server: 352 milliseconds
+2023-06-19 17:48:07,636 - root - INFO - IdentifyFace is called.
+2023-06-19 17:48:07,694 - root - INFO - MTCNN face detection time: 57.756187
+2023-06-19 17:48:08,008 - root - INFO - Identification time server: 372 milliseconds
+2023-06-19 17:48:08,854 - root - INFO - IdentifyFace is called.
+2023-06-19 17:48:08,908 - root - INFO - MTCNN face detection time: 54.370463
+2023-06-19 17:48:09,215 - root - INFO - Identification time server: 361 milliseconds
+2023-06-19 17:48:09,829 - root - INFO - IdentifyFace is called.
+2023-06-19 17:48:09,896 - root - INFO - MTCNN face detection time: 66.45245
+2023-06-19 17:48:10,214 - root - INFO - Identification time server: 385 milliseconds
+2023-06-19 17:49:58,345 - root - INFO - IdentifyFace is called.
+2023-06-19 17:49:58,409 - root - INFO - MTCNN face detection time: 64.090247
+2023-06-19 17:49:58,675 - root - INFO - Identification time server: 330 milliseconds
+2023-06-19 17:50:00,298 - root - INFO - IdentifyFace is called.
+2023-06-19 17:50:00,355 - root - INFO - MTCNN face detection time: 55.818926
+2023-06-19 17:50:00,667 - root - INFO - Identification time server: 368 milliseconds
+2023-06-19 17:50:01,742 - root - INFO - IdentifyFace is called.
+2023-06-19 17:50:01,799 - root - INFO - MTCNN face detection time: 56.053176
+2023-06-19 17:50:02,111 - root - INFO - Identification time server: 369 milliseconds
+2023-06-19 17:50:24,119 - root - INFO - IdentifyFace is called.
+2023-06-19 17:50:24,175 - root - INFO - MTCNN face detection time: 55.668839999999996
+2023-06-19 17:50:24,446 - root - INFO - Identification time server: 327 milliseconds
+2023-06-19 17:50:25,632 - root - INFO - IdentifyFace is called.
+2023-06-19 17:50:25,687 - root - INFO - MTCNN face detection time: 55.024893
+2023-06-19 17:50:25,986 - root - INFO - Identification time server: 354 milliseconds
+2023-06-19 17:50:26,992 - root - INFO - IdentifyFace is called.
+2023-06-19 17:50:27,048 - root - INFO - MTCNN face detection time: 55.498796000000006
+2023-06-19 17:50:27,354 - root - INFO - Identification time server: 362 milliseconds
+2023-06-19 18:38:12,063 - root - INFO - IdentifyFace is called.
+2023-06-19 18:38:12,131 - root - INFO - MTCNN face detection time: 67.695194
+2023-06-19 18:38:12,440 - root - INFO - Identification time server: 377 milliseconds
+2023-06-19 18:38:16,011 - root - INFO - IdentifyFace is called.
+2023-06-19 18:38:16,067 - root - INFO - MTCNN face detection time: 55.632064
+2023-06-19 18:38:16,379 - root - INFO - Identification time server: 367 milliseconds
+2023-06-19 18:38:53,699 - root - INFO - IdentifyFace is called.
+2023-06-19 18:38:53,753 - root - INFO - MTCNN face detection time: 54.280081
+2023-06-19 18:38:54,021 - root - INFO - Identification time server: 322 milliseconds
+2023-06-19 18:39:00,099 - root - INFO - IdentifyFace is called.
+2023-06-19 18:39:00,153 - root - INFO - MTCNN face detection time: 54.136228
+2023-06-19 18:39:00,469 - root - INFO - Identification time server: 370 milliseconds
+2023-06-19 18:39:01,561 - root - INFO - IdentifyFace is called.
+2023-06-19 18:39:01,615 - root - INFO - MTCNN face detection time: 54.084748000000005
+2023-06-19 18:39:01,924 - root - INFO - Identification time server: 363 milliseconds
+2023-06-19 18:39:02,776 - root - INFO - IdentifyFace is called.
+2023-06-19 18:39:02,836 - root - INFO - MTCNN face detection time: 59.799369999999996
+2023-06-19 18:39:03,156 - root - INFO - Identification time server: 379 milliseconds
